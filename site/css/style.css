@@ -36,6 +36,8 @@ body {
 
 .header-background {
   position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -43,11 +45,14 @@ body {
   background: #a9e03d url(../images/header/dandelion2.png) no-repeat top center;
 }
 #header {
+  background: #fff;
 	margin: 0 auto;
 	padding: 0;
 	width: 960px;
+  height: 200px;
 }
 #header .section {
+  position: relative;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -80,103 +85,51 @@ body {
   text-align: center;
 }
 
-/*
-  -------------------------  content  --------------------------
-*/
-
-
-.page-content {
-  position: absolute;
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
-.google-map-frame {
-  margin: 20px 10px 10px 10px;
-  padding: 0 0 20px 0;
-}
-
-#google-map {
-  margin: 0;
-  padding: 0;
-  width: 920px;
-  height: 480px;
-}
-
-#google-map div {
-  margin: 0;
-  padding: 0;
-}
-
 .nav-tabs {
-	display: inline-block;
-	float: right;
-	margin: 0;
-	overflow: hidden;
-	padding: 146px 0 0;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  padding: 146px 0 0;
 }
 .nav-tabs li {
   border-radius: 3px;
-	display: inline-block;
-	float: left;
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
 }
 .nav-tabs li a {
-	color: #fff;
+  color: #fff;
   border-radius: 3px;
-	display: inline-block;
-	font-size: 16px;
-	height: 30px;
-	letter-spacing: 0.05em;
-	line-height: 30px;
-	margin: 0;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .nav-tabs li a:hover {
-	color: #eee;
+  color: #eee;
 }
 .nav-tabs li.selected a {
-	background: #407010;
+  background: #407010;
 }
 
-#header .article {
-	background: #a9e03d;
-	border: 2px solid #89c02d;
-	border-radius: 4px;
-	margin: 50px auto 28px;
-	overflow: hidden;
-	padding: 0;
-	width: 936px;
-}
-#header .article img {
-	display: block;
-	float: left;
-	margin: 0 50px 0 0;
-	padding: 0;
-}
-#header .article h1 {
-	color: #fff;
-	font-family: 'ChangaOne';
-	font-size: 40px;
-	font-weight: normal;
-	margin: 0;
-	line-height: 50px;
-	padding: 110px 30px 30px;
-}
+/*
+  -----------------------  common content  ------------------------
+*/
 
 #body {
   color: #2f394e;
-	margin: 0 auto;
-	padding: 20px 0 50px;
-	width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+  width: 960px;
 }
 
 #body h2 {
@@ -187,10 +140,6 @@ body {
   margin: 0;
   padding: 25px 10px 40px;
 }
-
-/*
-  ----------------------- article -------------------------
-*/
 
 .article {
   background: #eee;
@@ -209,10 +158,10 @@ body {
 }
 
 .article p {
-	color: #464646;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
+  color: #464646;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
   padding: 10px 10px;
 }
 
@@ -231,13 +180,63 @@ body {
   padding: 0;
 }
 
+
+/*
+  --------------------------- index ----------------------------
+*/
+
+.jumbo {
+  background: #a9e03d;
+  border: 2px solid #89c02d;
+  border-radius: 4px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  padding: 0;
+  width: 936px;
+  box-shadow: 1px 1px 8px 0 #999;
+}
+.jumbo img {
+  display: block;
+  float: left;
+  margin: 0 50px 0 0;
+  padding: 0;
+}
+.jumbo h1 {
+  color: #fff;
+  font-family: 'ChangaOne';
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 50px;
+  padding: 110px 30px 30px;
+}
+
+/*
+  -------------------------- kapcsolat -------------------------
+*/
+.google-map-frame {
+  margin: 20px 10px 10px 10px;
+  padding: 0 0 20px 0;
+}
+
+#google-map {
+  margin: 0;
+  padding: 0;
+  width: 920px;
+  height: 480px;
+}
+
+#google-map div {
+  margin: 0;
+  padding: 0;
+}
+
 /*
   -------------------------  footer  --------------------------
 */
 
 #footer {
 	background: #a9e03d;
-	border-top: 1px solid #9bd9e0;
 	margin: 0;
 	padding: 0;
 }
@@ -267,6 +266,7 @@ body {
   padding: 22px 20px;
   overflow: hidden;
   width: 108px;
+  border-radius: 5px;
 }
 
 .connect-icon {
