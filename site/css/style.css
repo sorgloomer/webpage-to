@@ -144,7 +144,7 @@ body {
   background: #eee;
   border-radius: 6px;
   margin: 20px 10px;
-  padding: 0;
+  padding: 10px;
 }
 
 .article b {
@@ -162,10 +162,10 @@ body {
 .article h4,
 .article h5 {
   color: #222222;
-  display: inline-block;
+  display: block;
   font-weight: normal;
   margin: 0;
-  padding: 20px 10px 10px 10px;
+  padding: 20px 0 10px 0;
 }
 
 .article h1 span,
@@ -174,22 +174,31 @@ body {
 .article h4 span,
 .article h5 span{
   padding: 10px 0 0 0;
-  font-size: 80%;
+  font-size: 75%;
   display: block;
   font-style: italic;
 }
 
 .article h1 {
-  font-size: 22px;
+  font-size: 25px;
 }
 .article h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 .article h3 {
   font-size: 18px;
 }
 .article h4 {
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.quote {
+  margin: 20px 0 30px 0;
+  line-height: 22px;
+}
+.post {
+  font-style: italic;
+  margin: 10px 0;
 }
 
 .article p, .article-footer {
@@ -197,25 +206,37 @@ body {
   font-size: 13px;
   line-height: 24px;
   margin: 0;
-  padding: 10px 10px;
+  padding: 10px 0;
 }
 .article-footer {
   font-style: italic;
 }
 
+.article ul {
+  color: #464646;
+  list-style: none;
+  line-height: 24px;
+  padding: 0 0 0 30px;
+}
+
+.article ul li:before {
+  content:"-";
+  position:relative;
+  left: -5px;
+}
+.article ul li {
+  text-indent: -5px;
+}
+
 .article a {
   color: #464646;
 }
-.article ul {
-  padding: 0;
-  margin: 10px 10px;
-}
-.article li {
+.details {
   color: #464646;
   list-style: none;
   line-height: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
 }
 
 
