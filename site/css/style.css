@@ -213,6 +213,17 @@ body {
 }
 
 /*
+  ---------------------------- magamrol ------------------------
+*/
+
+.smiley {
+  background-image: url("../images/smiley.png");
+  background-size: contain;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+/*
   -------------------------- kapcsolat -------------------------
 */
 .google-map-frame {
