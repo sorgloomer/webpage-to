@@ -132,11 +132,12 @@ body {
   width: 960px;
 }
 
-#body h2 {
+#body .page-title {
   margin: 0;
   padding: 25px 10px 40px;
   font-size: 30px;
   font-weight: normal;
+  display: block;
 }
 
 .article {
@@ -155,12 +156,51 @@ body {
   padding: 20px 10px 10px 10px;
 }
 
-.article p {
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5 {
+  color: #222222;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+  padding: 20px 10px 10px 10px;
+}
+
+.article h1 span,
+.article h2 span,
+.article h3 span,
+.article h4 span,
+.article h5 span{
+  padding: 10px 0 0 0;
+  font-size: 80%;
+  display: block;
+  font-style: italic;
+}
+
+.article h1 {
+  font-size: 22px;
+}
+.article h2 {
+  font-size: 20px;
+}
+.article h3 {
+  font-size: 18px;
+}
+.article h4 {
+  font-size: 16px;
+}
+
+.article p, .article-footer {
   color: #464646;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
   padding: 10px 10px;
+}
+.article-footer {
+  font-style: italic;
 }
 
 .article a {
