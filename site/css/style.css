@@ -393,3 +393,9 @@ body {
 .main-title {
   text-align: center;
 }
+
+.prices {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
