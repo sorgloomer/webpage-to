@@ -216,7 +216,7 @@ body {
   left: -5px;
 }
 .article ul li {
-  text-indent: -5px;
+  /* text-indent: -5px; */
 }
 
 .article a {
@@ -386,6 +386,10 @@ body {
   vertical-align: top;
 }
 
-.jumbo-title {
+.bottom-logo {
+  text-align: center;
+}
+
+.main-title {
   text-align: center;
 }
