@@ -395,8 +395,13 @@ body {
   vertical-align: top;
 }
 
-.bottom-logo {
+.bottom-logo-frame {
   text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+.bottom-logo {
+  width: 90%;
 }
 
 .main-title {
